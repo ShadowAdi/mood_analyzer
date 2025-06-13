@@ -82,7 +82,7 @@ npm run dev
 
 ## 🌍 Deployed Link
 
-🔗 [Live App on Vercel](https://your-deployment-url.vercel.app)
+🔗 [Vercel Url](https://mood-analyzer-beta.vercel.app/)
 
 ---
 
