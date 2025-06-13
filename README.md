@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Mini Employee Mood Tracker
 
-## Getting Started
+A full-stack web app built with **Next.js 14 (App Router)**, **TypeScript**, **TailwindCSS**, and **Shadcn/UI** to allow employees to submit their mood and view entries via a simple admin dashboard.
 
-First, run the development server:
+---
 
+## ✨ Features
+
+- 🌈 Submit your current mood from 6 predefined options
+- 💬 Add an optional comment with your submission
+- 📋 Admin dashboard to view all mood entries
+- ⚡ Clean, responsive UI with TailwindCSS and Shadcn/UI components
+- 🧠 API Routes for form submission and data fetching
+- 🧪 In-memory data storage (no database)
+
+---
+
+## 📁 Pages Overview
+
+### `/` — Home Page
+- Welcome message and a CTA button to submit mood and a button to go to admin page
+
+### `/mood` — Mood Submission
+- Choose from:
+  - Happy
+  - Angry
+  - Sad
+  - Anxious
+  - Tired
+  - Anxious
+- Optional comment field
+- Submit via `POST` API route
+
+### `/admin` — Admin Dashboard
+- Table listing all submitted moods
+- Displays: Mood, Comment, Timestamp, Status
+- Data fetched via `GET` API route
+
+---
+
+
+## 🧑‍💻 Tech Stack
+
+- [Next.js 14 (App Router)](https://nextjs.org/docs/app)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Shadcn/UI](https://ui.shadcn.com/)
+- [Vercel (Deployment)](https://vercel.com)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ShadowAdi/mood_analyzer.git
+cd mood_analyzer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run the app locally
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Visit:
+- `http://localhost:3000/` — Home
+- `http://localhost:3000/mood` — Mood Submission
+- `http://localhost:3000/admin` — Admin Dashboard
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚠️ Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **No database used** — all mood data is stored in a simple in-memory array (`utils/MoodData.ts`).
+- **No AI-generated code** used in compliance with task rules.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌍 Deployed Link
 
-## Deploy on Vercel
+🔗 [Live App on Vercel](https://your-deployment-url.vercel.app)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📃 License
+MIT
