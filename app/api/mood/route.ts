@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { MoodData } from "@/utils/MoodData";
 import { NextResponse } from "next/server";
 import { v4 as uuidv4 } from "uuid";
