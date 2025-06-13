@@ -33,11 +33,9 @@ export async function POST(request: Request) {
       createdAt: new Date().toISOString(),
     };
     MoodData.push(newMood);
-    console.log("mood data ",MoodData)
     return NextResponse.json(
       {
         message: "Mood Is Created",
-        newMood,
         success: true,
       },
       {
